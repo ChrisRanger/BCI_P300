@@ -1,0 +1,77 @@
+Brain Vision Data Exchange Header File Version 1.0
+;Written using pybv 0.3.0
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=s1.eeg
+MarkerFile=s1.vmrk
+DataFormat=BINARY
+; DataOrientation: MULTIPLEXED=ch1,pt1, ch2,pt1 ...
+DataOrientation=MULTIPLEXED
+NumberOfChannels=20
+; Sampling interval in microseconds
+SamplingInterval=4000
+
+[Binary Infos]
+BinaryFormat=IEEE_FLOAT_32
+
+[Channel Infos]
+; Each entry: Ch<Channel number>=<Name>,<Reference channel name>,
+; <Resolution in "unit">,<unit>,Future extensions…
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in channel names are coded as "\1".
+Ch1=Fz,,100000,µV
+Ch2=F3,,100000,µV
+Ch3=F4,,100000,µV
+Ch4=Cz,,100000,µV
+Ch5=C3,,100000,µV
+Ch6=C4,,100000,µV
+Ch7=T7,,100000,µV
+Ch8=T8,,100000,µV
+Ch9=CP3,,100000,µV
+Ch10=CP4,,100000,µV
+Ch11=CP5,,100000,µV
+Ch12=CP6,,100000,µV
+Ch13=Pz,,100000,µV
+Ch14=P3,,100000,µV
+Ch15=P4,,100000,µV
+Ch16=P7,,100000,µV
+Ch17=P8,,100000,µV
+Ch18=Oz,,100000,µV
+Ch19=O1,,100000,µV
+Ch20=O2,,100000,µV
+
+[Coordinates]
+; Each entry: Ch<Channel number>=<Radius>,<Theta>,<Phi>
+Ch1=1,49,29
+Ch2=1,-45,0
+Ch3=1,-49,29
+Ch4=1,45,0
+Ch5=1,-60,51
+Ch6=1,-90,-36
+Ch7=1,22,-90
+Ch8=1,-49,-29
+Ch9=1,-60,0
+Ch10=1,-90,-18
+Ch11=1,0,0
+Ch12=1,45,-90
+Ch13=1,49,-29
+Ch14=1,-60,51
+Ch15=1,-90,0
+Ch16=1,-45,0
+Ch17=1,60,51
+Ch18=1,60,-51
+Ch19=1,-90,36
+Ch20=1,-90,36
+
+
+
+[Comment]
+
+A m p l i f i e r S e t u p
+============================
+Number of channels: 20
+Sampling Rate [Hz]: 250
+Sampling Interval [µS]: 4000
+Channels
+
